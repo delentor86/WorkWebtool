@@ -1,0 +1,21 @@
+def calc_Average ( score1, score2, score3, score4, score5 ):
+	score1 = float( input( "Please enter the first score: "))
+	score2 = float( input( "Please enter the second score: "))
+	score3 = float( input( "Please enter the third score: "))
+	score4 = float( input( "Please enter the fourth score: "))
+	score5 = float( input( "Please enter the fifth score: "))
+	score_average = ( score1 + score2 + score3 + score4 + score5 ) / 5
+	return score_average 
+
+def determine_Grade ( score ):
+	if ( score < 60 ):
+		return "F"
+	elif ( score < 70 ):
+		return "D"
+	elif ( score < 80 ):
+		return "C"
+	elif ( score < 90 ):
+		return "B"
+	elif ( score < 101 ):
+		return "A"
+
